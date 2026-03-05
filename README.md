@@ -15,16 +15,16 @@ This document assumes you have the following:
 >[!NOTE]
 > These instructions are specifically created for Linux users. The steps to perform these instructions may be different if you are using Windows.
 
-### Quick Links
-- Installing the prerequisites
-- Run the static generated website locally
-- Create a static generated website
-- How to host your website
-- Creating a resume
+### Instruction Overview
+- [1 Setup Instructions](#1-setup-instructions)
+- [2 Run the Pelican website locally](#2-running-the-pelican-website-locally)
+- [3 Create your own Pelican website](#3-create-your-own-pelican-website)
+- [4 Host the website in Codeberg Pages](#4-host-the-website-in-codeberg-pages)
+- [5 Creating a resume]
 
 
 Following Andrew Etter's guide on Technical Documentation, the instructions are formatted in a way such that the target audience can understand. Headings and ordered lists are also used to make it easier to scan and read.
-### 1 Setup 
+### 1 Setup Instructions
 Before proceeding to further steps, you will have to install 3 prerequisites: Python, Pelican (the static website generator we will use).
 1. **Open** the command line terminal
 2. **Verify** that the version is 3.10 or above by typing:
@@ -101,3 +101,15 @@ pelican content
 ```
 8. **You have just created a skeleton of your website!** 
 9. Enter `pelican --listen` in the command line to see your website locally.
+
+### 4 Host the website in Codeberg Pages
+1. **Generate** the site
+```bash
+pelican content -s publishconf.py
+```
+2. **Deploy** to Codeberg Pages
+```bash
+ghp-import output -b pages
+git push origin pages
+```
+3. Your website will be hosted in `https://your-username.codeberg.page/repository-name` 
