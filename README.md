@@ -48,9 +48,12 @@ python --version
 ### 2 Running the Pelican website locally
 In this section, you will learn how run the static generated website. **Git** is required in order to complete these steps which is already installed by default on Linux.   
 #### 2.1 Clone this repository
-1. **Copy** the Codeberg URL in this repository. 
-2. **Verify** that URL you copied is this: `https://codeberg.org/samsoncj/comp2600-a2.git`
-3. **Clone** this repository with `git clone`. 
+1. **Copy** the Codeberg URL in this repository.
+![Codeberg URL](/screenshots/url-example.png)
+
+2. 
+3. **Verify** that URL you copied is this: `https://codeberg.org/samsoncj/comp2600-a2.git`
+4. **Clone** this repository with `git clone`. 
 ```bash
 git clone URL
 # Where URL is the repository URL you copied
