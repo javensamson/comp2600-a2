@@ -12,6 +12,8 @@ This document assumes you have the following:
 - Codeberg account
 - Git
 ## Instructions
+>[!NOTE]
+> These instructions are specifically created for Linux users. The steps to perform these instructions may be different if you are using Windows.
 
 ### Quick Links
 - Installing the prerequisites
@@ -20,7 +22,6 @@ This document assumes you have the following:
 - How to host your website
 - Creating a resume
 
-> Note: These instructions are specifically created for Linux users. The steps to perform these instructions may be different if you are using Windows.
 
 Following Andrew Etter's guide on Technical Documentation, the instructions are formatted in a way such that the target audience can understand. Headings and ordered lists are also used to make it easier to scan and read.
 ### 1 Setup 
@@ -53,8 +54,8 @@ In this step, you will learn how run the static generated website. Git is requir
 ```bash
 git clone https://codeberg.org/samsoncj/comp2600-a2.git
 ```
-
-> Note: You only have to do this once. The same step applies for any other repositories. The only difference is the URL. Ensure that you are copying the correct URL for the repository you want to clone.
+> [!NOTE]
+> You only have to do this once. The same step applies for any other repositories. The only difference is the URL. Ensure that you are copying the correct URL for the repository you want to clone.
 #### 2.2 Run the website locally
 1. Navigate to the project directory you cloned using `cd`. 
 2. Type `pelican content` to regenerate the static site.
